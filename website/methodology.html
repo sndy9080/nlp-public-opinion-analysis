@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methodology</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navbar start -->
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">Analisis<span> Opini Publik</span>.</a>
+
+        <div class="navbar-nav" id="navbarNav">
+          <a href="index.html">Home</a>
+          <a href="bar-chart.html">Bar Chart</a>
+          <a href="wordcloud.html">Wordcloud</a>
+          <a href="lda-model.html">LDA Model</a>
+          <a href=""></a>
+          <div class="navbar-extra">
+            <a href="report.html" id="report"
+              ><i data-feather="file-text"></i
+            ></a>
+            <a href="methodology.html" id="methodology"
+              ><i data-feather="info"></i
+            ></a>
+            <a href="download.html" id="download"
+              ><i data-feather="download"></i
+            ></a>
+          </div>
+        </div>
+
+        <button class="navbar-toggler" id="navbarToggler">
+          <i data-feather="menu"></i>
+        </button>
+      </nav>
+      <!-- Navbar end -->
+
+      <section class="content">
+        <h1>Metodologi Analisis Opini Publik</h1>
+
+        <h2>Pendekatan Penelitian</h2>
+        <p>
+          Penelitian ini menggunakan pendekatan analisis sentimen dan topic
+          modeling untuk memahami opini publik terhadap kebijakan penghapusan
+          utang macet bagi pelaku UMKM yang diatur dalam PP Nomor 47 Tahun 2024.
+          Dengan memanfaatkan teknologi Natural Language Processing (NLP),
+          penelitian ini bertujuan untuk menganalisis data teks dari platform
+          media sosial X (sebelumnya dikenal sebagai Twitter).
+        </p>
+
+        <h2>Proses Analisis</h2>
+        <p>
+          Proses analisis dimulai dengan pengumpulan data dari platform X, di
+          mana jutaan pendapat masyarakat dapat diakses secara real-time. Data
+          yang terkumpul kemudian diproses menggunakan teknik NLP untuk
+          membersihkan dan menyiapkan teks untuk analisis lebih lanjut.
+        </p>
+
+        <h2>Preprocessing</h2>
+        <p>Bagian preprocessing mencakup langkah-langkah berikut:</p>
+        <ul style="padding-left: 20px">
+          <li>Penghapusan karakter khusus dan tanda baca.</li>
+          <li>Pengubahan semua teks menjadi huruf kecil untuk konsistensi.</li>
+          <li>
+            Penghapusan stop words (kata umum yang tidak memberikan makna
+            penting).
+          </li>
+          <li>
+            Stemming atau lemmatization untuk mengubah kata ke bentuk dasarnya.
+          </li>
+        </ul>
+        <p></p>
+        <h2>Labeling</h2>
+        <p>
+          Setelah preprocessing, data diberi label berdasarkan sentimen yang
+          terkandung dalam teks. Label ini mencakup:
+        </p>
+        <ul style="padding-left: 20px">
+          <li><strong>Positif:</strong> Opini yang mendukung kebijakan.</li>
+          <li>
+            <strong>Negatif:</strong> Opini yang menolak atau mengkritik
+            kebijakan.
+          </li>
+          <li>
+            <strong>Netral:</strong> Opini yang tidak menunjukkan dukungan atau
+            penolakan yang jelas.
+          </li>
+        </ul>
+        <p></p>
+        <h2>Naïve Bayes and LDA Modeling</h2>
+        <h3>1. Naive Bayes</h3>
+        <p>
+          Algoritma Naive Bayes digunakan untuk klasifikasi sentimen, yang
+          membagi opini menjadi tiga kategori: positif, negatif, dan netral.
+          Model ini bekerja dengan menghitung probabilitas dari setiap kategori
+          berdasarkan kata-kata yang muncul dalam teks. Dengan akurasi sebesar
+          73.65%, model ini menunjukkan kemampuan yang baik dalam
+          mengklasifikasikan opini masyarakat.
+        </p>
+
+        <h3>2. Latent Dirichlet Allocation (LDA)</h3>
+        <p>
+          LDA digunakan untuk mengidentifikasi topik utama dari opini
+          masyarakat. Metode ini memungkinkan peneliti untuk menemukan
+          distribusi tema dalam kumpulan data besar, sehingga dapat
+          mengungkapkan sub-topik yang relevan dalam diskusi publik. LDA telah
+          terbukti efektif dalam analisis dokumen kebijakan nasional dan
+          memberikan wawasan tentang tren opini masyarakat.
+        </p>
+      </section>
+    </div>
+    <footer>
+      <p style="font-size: small; color: #f5f5dc">
+        &copy; <span id="currentYear"></span> Public Opinion Analysis. All
+        rights reserved.
+      </p>
+      <p style="font-size: small">Teknik Komputer UMUKA.</p>
+    </footer>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <script>
+      document
+        .getElementById("navbarToggler")
+        .addEventListener("click", function () {
+          document.getElementById("navbarNav").classList.toggle("active");
+        });
+    </script>
+    <script>
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

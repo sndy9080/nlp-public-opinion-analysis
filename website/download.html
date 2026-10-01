@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Download</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navbar start -->
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">Analisis<span> Opini Publik</span>.</a>
+
+        <div class="navbar-nav" id="navbarNav">
+          <a href="index.html">Home</a>
+          <a href="bar-chart.html">Bar Chart</a>
+          <a href="wordcloud.html">Wordcloud</a>
+          <a href="lda-model.html">LDA Model</a>
+          <a href=""></a>
+          <div class="navbar-extra">
+            <a href="report.html" id="report"
+              ><i data-feather="file-text"></i
+            ></a>
+            <a href="methodology.html" id="methodology"
+              ><i data-feather="info"></i
+            ></a>
+            <a href="download.html" id="download"
+              ><i data-feather="download"></i
+            ></a>
+          </div>
+        </div>
+
+        <button class="navbar-toggler" id="navbarToggler">
+          <i data-feather="menu"></i>
+        </button>
+      </nav>
+      <!-- Navbar end -->
+
+      <section class="content">
+        <h1>Halaman Unduh</h1>
+        <p>
+          Di bawah ini adalah file-file yang dapat diunduh terkait dengan
+          penelitian analisis opini publik:
+        </p>
+
+        <h2>Dokumen Penelitian</h2>
+        <ul style="padding-left: 20px">
+          <li>
+            <a
+              href="https://scholar.google.com/scholar?q=Analisis+Opini+Publik+dengan+NLP+Berbasis+Mobile+Computing+untuk+Mendukung+Indonesia+Emas+2045"
+              target="_blank"
+            >
+              <i data-feather="file-text"></i> Laporan Penelitian
+            </a>
+            <p>
+              Dokumen lengkap yang menjelaskan metodologi, hasil, dan kesimpulan
+              dari penelitian ini.
+            </p>
+          </li>
+          <li>
+            <a href="asset/Data Sentimen.csv" download>
+              <i data-feather="file"></i> Dataset Opini Publik (CSV)
+            </a>
+            <p>
+              Dataset yang berisi data opini publik yang digunakan dalam
+              analisis ini.
+            </p>
+          </li>
+          <li>
+            <a href="asset/Bar Chart.png" target="_blank" download>
+              <i data-feather="file"></i> Bar Chart (PNG)
+            </a>
+            <p>Bar chart yang menunjukkan distribusi opini publik.</p>
+          </li>
+          <li>
+            <a href="asset/Wordcloud Topic.png" target="_blank" download>
+              <i data-feather="file"></i> Wordcloud Topic (PNG)
+            </a>
+            <p>
+              Wordcloud yang menunjukkan topik-topik utama dari opini publik.
+            </p>
+          </li>
+          <li>
+            <a href="asset/df_dominant_topic.csv" download>
+              <i data-feather="file"></i> Dominant Topic Data (CSV)
+            </a>
+            <p>
+              Dataset yang berisi data topik dominan dari analisis opini publik.
+            </p>
+          </li>
+          <li>
+            <a href="asset/df_imp_wcount.csv" download>
+              <i data-feather="file"></i> Important Word Count Data (CSV)
+            </a>
+            <p>
+              Dataset yang berisi jumlah kata penting dari analisis opini
+              publik.
+            </p>
+          </li>
+        </ul>
+
+        <h2>Dokumen Terkait</h2>
+        <ul style="padding-left: 20px">
+          <li>
+            <a href="asset/PP Nomor 47 Tahun 2024.pdf" target="_blank" download>
+              <i data-feather="file-text"></i> Peraturan Pemerintah Nomor 47
+              Tahun 2024 (PDF)
+            </a>
+            <p>
+              Dokumen resmi mengenai kebijakan penghapusan utang macet bagi
+              pelaku UMKM.
+            </p>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/18UhjN5l-Ug64bCzUhJORfoYixi5sok8e/view?usp=sharing"
+              target="_blank"
+              download
+            >
+              <i data-feather="file-text"></i> Latar Belakang Penelitian (PDF)
+            </a>
+            <p>
+              Dokumen yang menjelaskan latar belakang dan tujuan penelitian ini.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <p style="font-size: small; color: #f5f5dc">
+        &copy; <span id="currentYear"></span> Public Opinion Analysis. All
+        rights reserved.
+      </p>
+      <p style="font-size: small">Teknik Komputer UMUKA.</p>
+    </footer>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <script>
+      document
+        .getElementById("navbarToggler")
+        .addEventListener("click", function () {
+          document.getElementById("navbarNav").classList.toggle("active");
+        });
+    </script>
+    <script>
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navbar start -->
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">Analisis<span> Opini Publik</span>.</a>
+
+        <div class="navbar-nav" id="navbarNav">
+          <a href="index.html">Home</a>
+          <a href="bar-chart.html">Bar Chart</a>
+          <a href="wordcloud.html">Wordcloud</a>
+          <a href="lda-model.html">LDA Model</a>
+          <a href=""></a>
+          <div class="navbar-extra">
+            <a href="report.html" id="report"
+              ><i data-feather="file-text"></i
+            ></a>
+            <a href="methodology.html" id="methodology"
+              ><i data-feather="info"></i
+            ></a>
+            <a href="download.html" id="download"
+              ><i data-feather="download"></i
+            ></a>
+          </div>
+        </div>
+
+        <button class="navbar-toggler" id="navbarToggler">
+          <i data-feather="menu"></i>
+        </button>
+      </nav>
+      <!-- Navbar end -->
+
+      <section class="content">
+        <h1>Laporan Analisis Opini Publik</h1>
+        <!-- <h2>Pendahuluan</h2> -->
+        <p>
+          UMKM (Usaha Mikro, Kecil, dan Menengah) memiliki peran yang sangat
+          penting dalam perekonomian Indonesia. Penelitian ini bertujuan untuk
+          menganalisis opini publik terhadap kebijakan penghapusan utang macet
+          bagi pelaku UMKM yang diatur dalam PP Nomor 47 Tahun 2024.
+        </p>
+
+        <h2>Hasil Analisis</h2>
+        <h3>1. Sentimen Publik</h3>
+        <p>
+          Hasil analisis menunjukkan bahwa sentimen publik didominasi oleh opini
+          netral (54.76%) dan positif (41.90%), dengan opini negatif hanya
+          berjumlah 3.34%. Ini mencerminkan sikap penerimaan masyarakat yang
+          cukup baik terhadap kebijakan tersebut.
+        </p>
+
+        <h3>2. Topik Utama</h3>
+        <p>
+          Analisis LDA mengidentifikasi tiga tema utama dalam diskusi publik:
+          penghapusan utang, peran presiden, dan apresiasi terhadap kebijakan.
+          Ini memberikan wawasan yang lebih mendalam tentang fokus dan
+          kekhawatiran masyarakat.
+        </p>
+
+        <h3>2. Tabel Ringkasan Data</h3>
+        <table style="width: 100%; border-collapse: collapse">
+          <thead>
+            <tr>
+              <th style="border: 1px solid #ccc; padding: 8px">
+                Kategori Sentimen
+              </th>
+              <th style="border: 1px solid #ccc; padding: 8px">Jumlah Data</th>
+              <th style="border: 1px solid #ccc; padding: 8px">Jumlah (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 8px">Positif</td>
+              <td style="border: 1px solid #ccc; padding: 8px">326</td>
+              <td style="border: 1px solid #ccc; padding: 8px">41.90%</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 8px">Netral</td>
+              <td style="border: 1px solid #ccc; padding: 8px">426</td>
+              <td style="border: 1px solid #ccc; padding: 8px">54.76%</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ccc; padding: 8px">Negatif</td>
+              <td style="border: 1px solid #ccc; padding: 8px">26</td>
+              <td style="border: 1px solid #ccc; padding: 8px">3.34%</td>
+            </tr>
+          </tbody>
+        </table>
+<p></p>
+        <h3>3. Sumber Data</h3>
+        <p>
+          Data yang digunakan dalam analisis ini diambil dari platform media
+          sosial X (Twitter) dan sumber-sumber lain yang relevan. Untuk
+          informasi lebih lanjut, silakan hubungi:
+        </p>
+        <ul style="padding-left: 50px;"></ul>
+          <li>
+            <a href="mailto:sendytegarm@gmail.com" target="_blank"
+              >Sendy Tegar Mahendra</a
+            >
+          </li>
+          <li>
+            <a href="mailto:ariarohmats68@gmail.com" target="_blank"
+              >Aria Rohmat Sulistyo</a
+            >
+          </li>
+        </ul>
+        <p></p>
+        <h3>4. Rekomendasi Kebijakan</h3>
+        <p>
+          Berdasarkan hasil analisis, berikut adalah beberapa rekomendasi untuk
+          meningkatkan efektivitas kebijakan penghapusan utang UMKM:
+        </p>
+        <ul style="padding-left: 20px;">
+          <li>
+            Meningkatkan sosialisasi kebijakan kepada pelaku UMKM untuk
+            memastikan pemahaman yang lebih baik.
+          </li>
+          <li>
+            Melakukan evaluasi berkala terhadap implementasi kebijakan untuk
+            menanggapi masukan dari masyarakat.
+          </li>
+          <li>
+            Menjalin kerjasama dengan lembaga keuangan untuk memberikan dukungan
+            tambahan bagi UMKM.
+          </li>
+        </ul>
+        <p></p>
+        <h2>Kesimpulan</h2>
+        <p>
+          Penelitian ini menunjukkan bahwa kebijakan penghapusan utang macet
+          telah mendapatkan perhatian luas dari masyarakat. Meskipun opini
+          negatif terbilang kecil, penting untuk memperhatikan masukan tersebut
+          untuk meningkatkan implementasi kebijakan di masa mendatang.
+        </p>
+        <p></p>
+    <h2>Kontak dan Informasi</h2>
+    <p>
+        Untuk informasi lebih lanjut mengenai analisis ini, Anda dapat menghubungi kami melalui:
+    </p>
+    <ul style="padding-left: 20px;">
+        <li>Email: <a href="mailto:sendytegarm@gmail.com" target="_blank">sendytegarm@gmail.com</a></li>
+        <li>Email: <a href="mailto:ariarohmats68@gmail.com" target="_blank">ariarohmats68@gmail.com</a></li>
+        <li>Alamat: Jl. Raya Solo-Tawangmangu No.KM. 12, Pandes, Papahan, Kec. Tasikmadu, Kabupaten Karanganyar, Jawa Tengah 57761, Indonesia</li>
+    </ul>
+      </section>
+    </div>
+    <footer>
+        <p style="font-size: small; color: #f5f5dc">
+          &copy; <span id="currentYear"></span> Public Opinion Analysis. All rights reserved.
+        </p>
+        <p style="font-size: small;">Teknik Komputer UMUKA.</p>
+      </footer>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <script>
+      document
+        .getElementById("navbarToggler")
+        .addEventListener("click", function () {
+          document.getElementById("navbarNav").classList.toggle("active");
+        });
+    </script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+      </script>
+  </body>
+</html>

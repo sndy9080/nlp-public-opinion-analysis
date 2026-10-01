@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Analisis<span> Opini Publik</span>.</a>
+
+      <div class="navbar-nav" id="navbarNav">
+        <a href="index.html">Home</a>
+        <a href="bar-chart.html">Bar Chart</a>
+        <a href="wordcloud.html">Wordcloud</a>
+        <a href="lda-model.html">LDA Model</a>
+        <a href=""></a>
+        <div class="navbar-extra">
+          <a href="report.html" id="report"><i data-feather="file-text"></i></a>
+          <a href="methodology.html" id="methodology"
+            ><i data-feather="info"></i
+          ></a>
+          <a href="download.html" id="download"
+            ><i data-feather="download"></i
+          ></a>
+        </div>
+      </div>
+
+      <button class="navbar-toggler" id="navbarToggler">
+        <i data-feather="menu"></i>
+      </button>
+    </nav>
+    <!-- Navbar end -->
+
+    <section class="content">
+      <h1 style="font-size: xx-large">
+        Analisis Opini Publik dengan NLP Berbasis Mobile Computing untuk
+        Mendukung Indonesia Emas 2045
+      </h1>
+
+      <h2>Pendahuluan</h2>
+      <p>
+        UMKM (Usaha Mikro, Kecil, dan Menengah) memiliki peran yang sangat
+        penting dalam perekonomian Indonesia. Kontribusi mereka tidak hanya pada
+        penciptaan lapangan kerja tetapi juga dalam menyumbang pendapatan
+        domestik bruto (PDB) negara. Namun, banyak pelaku UMKM menghadapi
+        kendala berat, salah satunya adalah utang macet yang akibat Pandemi
+        covid-19. Hal ini menjadi penghambat perkembangan usaha mereka. Untuk
+        mengatasi masalah ini, pemerintah mengeluarkan Peraturan Pemerintah
+        <span style="font-style: oblique">(PP) Nomor 47 Tahun 2024</span> yang
+        mengatur kebijakan
+        <span style="font-style: oblique"
+          >penghapusan utang macet bagi pelaku UMKM</span
+        >
+        di berbagai sektor. Kebijakan ini diharapkan dapat membantu UMKM kembali
+        berkembang dengan beban finansial yang lebih ringan.
+      </p>
+
+      <p>
+        Meskipun kebijakan tersebut memiliki tujuan yang baik, efektivitasnya
+        sangat bergantung pada penerimaan masyarakat, khususnya para pelaku UMKM
+        yang menjadi target kebijakan ini. Opini publik terhadap kebijakan
+        tersebut dapat menjadi indikator penting untuk mengetahui sejauh mana
+        masyarakat mendukung atau justru merasa terbebani oleh implementasinya.
+        Oleh karena itu, analisis opini publik menjadi langkah yang strategis
+        untuk memahami pandangan masyarakat secara luas.
+      </p>
+
+      <h2>Kesimpulan</h2>
+      <p>
+        Hasil analisis ini menegaskan bahwa masyarakat Indonesia memberikan
+        perhatian besar terhadap program pemerintah yang berkaitan dengan
+        penghapusan utang, sektor UMKM, dan peran presiden dalam
+        mengimplementasikan kebijakan. Sentimen publik secara umum didominasi
+        oleh opini <span style="font-style: oblique">netral (54.76%)</span> dan
+        <span style="font-style: oblique">positif (41.90%)</span>, yang
+        mencerminkan sikap penerimaan masyarakat yang cukup baik terhadap
+        kebijakan tersebut. Sementara itu, opini
+        <span style="font-style: oblique">negatif</span> hanya berjumlah
+        <span style="font-style: oblique">3.34%</span>, menunjukkan minimnya
+        keberatan atau ketidakpuasan yang disuarakan.
+      </p>
+    </div>
+    <footer>
+      <p style="font-size: small; color: #f5f5dc">
+        &copy; <span id="currentYear"></span> Public Opinion Analysis. All rights reserved.
+      </p>
+      <p style="font-size: small;">Teknik Komputer UMUKA.</p>
+    </footer>
+    
+      <!-- Feather Icons -->
+      <script>
+        feather.replace();
+      </script>
+      <script>
+        document
+          .getElementById("navbarToggler")
+          .addEventListener("click", function () {
+            document.getElementById("navbarNav").classList.toggle("active");
+          });
+      </script>
+      <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+      </script>
+    </section>
+  </body>
+</html>
